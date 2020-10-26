@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, ActivityIndicator, FlatList, StyleSheet } from 'react-native';
-// import { FlatList } from 'react-native-gesture-handler';
 import Http from '../../libs/http';
 import CoinsItem from './CoinsItem';
+import Colors from 'cryptoTracker/src/res/colors';
 
 const CoinsScreen = (props) => {
   const [coins, setCoins] = useState([]);
@@ -44,7 +44,7 @@ const CoinsScreen = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.charade,
   },
   titleText: {
     color: '#fff',
